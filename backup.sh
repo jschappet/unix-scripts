@@ -5,7 +5,7 @@
 mkdir -p /root/logs
 
 NOW=$(date +"%Y-%m-%d")
-DEST_HOST=173.28.193.102
+DEST_HOST=${backup_host_ip}
 LOGFILE=/root/logs/backup.$NOW.log
 
 echo `date` "Starting Backup" > $LOGFILE
